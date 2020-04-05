@@ -2,9 +2,9 @@ version: "{branch} (#{build})"
 
 image:
   - Visual Studio 2013
-  #- Visual Studio 2015
-  #- Visual Studio 2017
-  #- Visual Studio 2019
+  - Visual Studio 2015
+  - Visual Studio 2017
+  - Visual Studio 2019
 
 environment:
   matrix:
@@ -26,7 +26,7 @@ for:
     environment:
       BOOSTDIR: C:\Libraries\boost_1_58_0
     build_script:
-      - call "C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x32
+      - call "C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x86
       - call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" x86
       - cd asio\src
       - nmake -f Makefile.msc
