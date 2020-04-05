@@ -36,10 +36,11 @@ for:
     environment:
       BOOSTDIR: C:\Libraries\boost_1_69_0
     build_script:
-      - dir "C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10"
-      - dir "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\Bin"
-      - call "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\Bin\SetEnv.cmd" /x64
       - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
       - cd asio\src
       - nmake -f Makefile.msc
       - nmake -f Makefile.msc check
+
+#- dir "C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10"
+#      - dir "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\Bin"
+#      - call "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\Bin\SetEnv.cmd" /x64
