@@ -1,8 +1,8 @@
 version: "{branch} (#{build})"
 
 image:
-  - Visual Studio 2015
   - Visual Studio 2017
+  #- Visual Studio 2015
 
 environment:
   matrix:
