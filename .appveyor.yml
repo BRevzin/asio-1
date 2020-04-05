@@ -36,8 +36,8 @@ for:
     environment:
       BOOSTDIR: C:\Libraries\boost_1_69_0
     build_script:
-      - dir "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\Bin"
       - dir "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\Bin"
+      - dir "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1"
       - call "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\Bin\SetEnv.cmd" /x64
       - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
       - cd asio\src
