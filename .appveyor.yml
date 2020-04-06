@@ -105,3 +105,5 @@ matrix:
       WIN9X: 1
     - image: Visual Studio 2019
       USING_BOOST: 1
+    - image: Visual Studio 2019
+      SEPARATE_COMPILATION: 1
