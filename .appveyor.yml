@@ -67,3 +67,32 @@ for:
       - cd asio\src
       - nmake -f Makefile.msc
       - nmake -f Makefile.msc check
+
+matrix:
+  exclude:
+    - image: Visual Studio 2013
+      environment:
+        - DEBUG: 1
+          WARNINGS: 1
+    - image: Visual Studio 2015
+      environment:
+        - DEBUG: 1
+          STANDALONE: 1
+          WARNINGS: 1
+          WIN9X: 1
+    - image: Visual Studio 2017
+      environment:
+        - DEBUG: 1
+          STANDALONE: 1
+          WARNINGS: 1
+          WIN9X: 1
+    - image: Visual Studio 2017
+      environment:
+        - DEBUG: 1
+          WARNINGS: 1
+    - image: Visual Studio 2019
+      environment:
+        - DEBUG: 1
+          STANDALONE: 1
+          WARNINGS: 1
+          WIN9X: 1
