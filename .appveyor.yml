@@ -11,11 +11,13 @@ environment:
   WARNINGS: 1
   matrix:
     - STANDALONE: 1
+      HEADER_ONLY: 1
     - STANDALONE: 1
       SEPARATE_COMPILATION: 1
     - STANDALONE: 1
       WIN9X: 1
     - USING_BOOST: 1
+      HEADER_ONLY: 1
     - USING_BOOST: 1
       SEPARATE_COMPILATION: 1
 
@@ -71,55 +73,23 @@ for:
 
 matrix:
   exclude:
-#   - image: Visual Studio 2013
-#     STANDALONE: 1
     - image: Visual Studio 2013
-      STANDALONE: 1
       SEPARATE_COMPILATION: 1
-#   - image: Visual Studio 2013
-#     STANDALONE: 1
-#     WIN9X: 1
     - image: Visual Studio 2013
       USING_BOOST: 1
-    - image: Visual Studio 2013
-      USING_BOOST: 1
-      SEPARATE_COMPILATION: 1
     - image: Visual Studio 2015
-      STANDALONE: 1
-#   - image: Visual Studio 2015
-#     STANDALONE: 1
-#     SEPARATE_COMPILATION: 1
+      HEADER_ONLY: 1
     - image: Visual Studio 2015
-      STANDALONE: 1
       WIN9X: 1
-#   - image: Visual Studio 2015
-#     USING_BOOST: 1
-    - image: Visual Studio 2015
-      USING_BOOST: 1
-      SEPARATE_COMPILATION: 1
-#   - image: Visual Studio 2017
-#     STANDALONE: 1
     - image: Visual Studio 2017
-      STANDALONE: 1
       SEPARATE_COMPILATION: 1
     - image: Visual Studio 2017
-      STANDALONE: 1
       WIN9X: 1
     - image: Visual Studio 2017
       USING_BOOST: 1
     - image: Visual Studio 2017
-      USING_BOOST: 1
-      SEPARATE_COMPILATION: 1
-    - image: Visual Studio 2019
-      STANDALONE: 1
-#   - image: Visual Studio 2019
-#     STANDALONE: 1
-#     SEPARATE_COMPILATION: 1
-    - image: Visual Studio 2019
-      STANDALONE: 1
+      HEADER_ONLY: 1
+    - image: Visual Studio 2017
       WIN9X: 1
-    - image: Visual Studio 2019
+    - image: Visual Studio 2017
       USING_BOOST: 1
-    - image: Visual Studio 2019
-      USING_BOOST: 1
-      SEPARATE_COMPILATION: 1
