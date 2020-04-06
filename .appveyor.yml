@@ -15,6 +15,7 @@ environment:
     - STANDALONE: 1
       SEPARATE_COMPILATION: 1
     - STANDALONE: 1
+      HEADER_ONLY: 1
       WIN9X: 1
     - USING_BOOST: 1
       HEADER_ONLY: 1
