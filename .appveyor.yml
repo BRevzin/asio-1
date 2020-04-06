@@ -1,9 +1,9 @@
 version: "{branch} (#{build})"
 
 image:
-  - Visual Studio 2013
-  - Visual Studio 2015
-  - Visual Studio 2017
+#  - Visual Studio 2013
+#  - Visual Studio 2015
+#  - Visual Studio 2017
   - Visual Studio 2019
 
 environment:
@@ -14,6 +14,8 @@ environment:
       HEADER_ONLY: 1
     - STANDALONE: 1
       SEPARATE_COMPILATION: 1
+    - STANDALONE: 1
+      CXXLATEST: 1
     - STANDALONE: 1
       HEADER_ONLY: 1
       WIN9X: 1
@@ -80,13 +82,19 @@ matrix:
     - image: Visual Studio 2013
       SEPARATE_COMPILATION: 1
     - image: Visual Studio 2013
+      CXXLATEST: 1
+    - image: Visual Studio 2013
       USING_BOOST: 1
     - image: Visual Studio 2015
       HEADER_ONLY: 1
     - image: Visual Studio 2015
+      CXXLATEST: 1
+    - image: Visual Studio 2015
       WIN9X: 1
     - image: Visual Studio 2017
       SEPARATE_COMPILATION: 1
+    - image: Visual Studio 2017
+      CXXLATEST: 1
     - image: Visual Studio 2017
       WIN9X: 1
     - image: Visual Studio 2017
