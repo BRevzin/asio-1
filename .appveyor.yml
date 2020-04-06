@@ -87,9 +87,9 @@ matrix:
       WIN9X: 1
     - image: Visual Studio 2017
       USING_BOOST: 1
-    - image: Visual Studio 2017
+    - image: Visual Studio 2019
       HEADER_ONLY: 1
-    - image: Visual Studio 2017
+    - image: Visual Studio 2019
       WIN9X: 1
-    - image: Visual Studio 2017
+    - image: Visual Studio 2019
       USING_BOOST: 1
